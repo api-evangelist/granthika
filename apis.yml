@@ -1,8 +1,30 @@
 aid: granthika
 name: Granthika
-description: Granthika is a company surfaced as a portfolio company of bloomberg-beta and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Granthika is a writing-software company founded by novelist Vikram Chandra
+  (author of Sacred Games) and Borislav Iordanov. Its product is a first-of-its-kind
+  semantic editor for professional and aspiring writers that lets authors capture
+  and manage the knowledge inside a manuscript — characters, locations, events, and
+  narrative structure — as they write, then integrate that knowledge back into the
+  text. Features include universe/knowledge building, a timeline, semantic search,
+  an intelligent analyzer, and language assistance, delivered as both an online app
+  and a desktop application with free trials and educational subscriptions. Granthika
+  was surfaced as a portfolio company of Bloomberg Beta. It publishes no bespoke
+  developer/product API; its marketing site runs on Wix, which exposes a public Wix
+  Site MCP endpoint and an llms.txt for agentic access to public site content.
 url: https://raw.githubusercontent.com/api-evangelist/granthika/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.wixstatic.com/media/fda06a_feac5f1753e343b1aa0fabb79a399f0f~mv2.avif/v1/fit/w_2500,h_1330,al_c/fda06a_feac5f1753e343b1aa0fabb79a399f0f~mv2.avif
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Writing Software
+- Semantic Editor
+- Authoring
+- Productivity
+- Fiction
+- MCP
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +50,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://granthika.co/
+  url: https://www.granthika.com/
+- type: Documentation
+  url: https://www.granthika.com/faq
+- type: Blog
+  url: https://blog.granthika.co/
+- type: Pricing
+  url: https://www.granthika.com/product
+- type: SignUp
+  url: https://app.granthika.com/console/
+- type: Support
+  url: https://www.granthika.com/let-s-connect
+- type: TermsOfService
+  url: https://www.granthika.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.granthika.com/privacy-policy
+- type: MCPServer
+  url: mcp/granthika-mcp.yml
+- type: LLMsTxt
+  url: llms/granthika-llms.txt
+- type: DomainSecurity
+  url: security/granthika-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
