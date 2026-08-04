@@ -7,7 +7,8 @@ description: Granthika's public website (granthika.com) is built on Wix, which
   exposes a hosted "Site Visitor Assistant" Model Context Protocol (MCP) server for
   agentic access to public site content and installed Wix business solutions. This is
   a generic Wix Site MCP surface, not a bespoke Granthika product API.
-status: active
+status: published
+status_raw: active
 provider: Wix (Site MCP)
 transport: streamable-http
 endpoint: https://www.granthika.com/_api/mcp
