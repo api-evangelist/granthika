@@ -3,10 +3,10 @@ method: searched
 source: live probe of https://www.granthika.com/_api/mcp (advertised in https://www.granthika.com/llms.txt);
   MCP initialize + tools/list handshake performed 2026-07-19
 name: Granthika Site MCP
-description: Granthika's public website (granthika.com) is built on Wix, which
-  exposes a hosted "Site Visitor Assistant" Model Context Protocol (MCP) server for
-  agentic access to public site content and installed Wix business solutions. This is
-  a generic Wix Site MCP surface, not a bespoke Granthika product API.
+description: Granthika's public website (granthika.com) is built on Wix, which exposes a hosted "Site
+  Visitor Assistant" Model Context Protocol (MCP) server for agentic access to public site content and
+  installed Wix business solutions. This is a generic Wix Site MCP surface, not a bespoke Granthika product
+  API.
 status: published
 status_raw: active
 provider: Wix (Site MCP)
@@ -14,11 +14,9 @@ transport: streamable-http
 endpoint: https://www.granthika.com/_api/mcp
 protocol_version: '2025-06-18'
 authentication: none
-auth_notes: >-
-  No authentication is required to connect. Only public site information is
-  accessible. Visitor-scoped actions use a GenerateVisitorToken flow. Verified
-  server_info name: 'Site Visitor Assistant for site "Granthika"
-  (https://www.granthika.com/_api/mcp)', version 1.0.0.
+auth_notes: 'No authentication is required to connect. Only public site information is accessible. Visitor-scoped
+  actions use a GenerateVisitorToken flow. Verified server_info name: ''Site Visitor Assistant for site
+  "Granthika" (https://www.granthika.com/_api/mcp)'', version 1.0.0.'
 docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
 capabilities:
   tools:
@@ -26,13 +24,13 @@ capabilities:
   logging: {}
 tools:
 - name: GetBusinessDetails
-  description: Returns business/site details (timezone, email, phone, fax, address, site
-    name, business name, description, schedule) and available site features.
+  description: Returns business/site details (timezone, email, phone, fax, address, site name, business
+    name, description, schedule) and available site features.
 - name: SearchInSite
   description: Free-text search across public site content.
 - name: SearchSiteApiDocs
-  description: Retrieves API documentation for the Wix business solutions installed on the
-    site and how to call them.
+  description: Retrieves API documentation for the Wix business solutions installed on the site and how
+    to call them.
 - name: BrowseWixRESTDocsMenu
   description: Browse the Wix REST API documentation menu hierarchy.
 - name: ReadFullDocsArticle
@@ -40,17 +38,20 @@ tools:
 - name: ReadFullDocsMethodSchema
   description: Fetches the full request/response schema for a Wix API method.
 - name: GenerateVisitorToken
-  description: Creates a visitor session and returns a visitor access token (required before
-    CallWixSiteAPI / ExecuteWixAPI).
+  description: Creates a visitor session and returns a visitor access token (required before CallWixSiteAPI
+    / ExecuteWixAPI).
 - name: CallWixSiteAPI
-  description: Calls a single Wix REST API method on the visitor's behalf (query data, book,
-    start a purchase).
+  description: Calls a single Wix REST API method on the visitor's behalf (query data, book, start a purchase).
 - name: ExecuteWixAPI
-  description: Runs sandboxed JavaScript against the Wix REST API on the visitor's behalf to
-    chain multiple calls in one step.
-notes: >-
-  Tool inventory captured verbatim from a live tools/list call on 2026-07-19.
-  Wix injects long agent-mandatory-instruction preambles into several tool
-  descriptions; those are summarized here. This MCP endpoint reflects the Wix
-  hosting platform, so it is not unique to Granthika and does not expose a
-  Granthika-specific writing/authoring API.
+  description: Runs sandboxed JavaScript against the Wix REST API on the visitor's behalf to chain multiple
+    calls in one step.
+notes: Tool inventory captured verbatim from a live tools/list call on 2026-07-19. Wix injects long agent-mandatory-instruction
+  preambles into several tool descriptions; those are summarized here. This MCP endpoint reflects the
+  Wix hosting platform, so it is not unique to Granthika and does not expose a Granthika-specific writing/authoring
+  API.
+deployment:
+  mode: remote
+  verified: searched
+  tools: 9
+  checked: '2026-08-12'
+  source: catalog MCP census
